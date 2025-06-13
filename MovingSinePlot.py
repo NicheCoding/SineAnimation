@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation 
 
-x = np.linspace(0, 2 * np.pi, 1000) #sets up 1000 points for sinx
+x = np.linspace(0, 2 * np.pi, 300) #sets up 1000 points for sinx
 y = np.sin(x) #the y values are literally calculating sine 
 
 fig, ax = plt.subplots() #fig = outline, ax = area, space to draw the thing
@@ -33,7 +33,7 @@ def update(frame): #update where dot is every frame
 
 ani = animation.FuncAnimation(
     fig, update, frames=len(x), init_func=init,
-    interval=5 , blit=True
+    interval=50 , blit=True
 )
 #interval = time between frames, blit = True means only redraw parts that change (more efficient)
 
