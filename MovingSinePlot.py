@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation 
 
-x = np.linspace(0, 2 * np.pi, 300) #sets up 1000 points for sinx
+x = np.linspace(0, 2 * np.pi, 300) #sets up 300 points for sinx (going to be same for circle)
 y = np.sin(x) #the y values are literally calculating sine 
 
 fig, ax = plt.subplots() #fig = outline, ax = area, space to draw the thing
